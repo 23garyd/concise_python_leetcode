@@ -6,4 +6,8 @@ class Solution:
                 brackets_stack.append(char)
             elif not brackets_stack or lefts.index(brackets_stack.pop()) != rights.index(char): 
                 return False
-        return not brackets_stack 
+        return not brackets_stack
+
+a = Solution()
+res = a.isValid( "([]{})")
+print(res)
